@@ -325,7 +325,11 @@ body {
   /* Основной Контент */
   /* Описание фотографии */
   /* Картинки в колонках */
-  /*Сайдбар*/ }
+  /*Сайдбар*/
+  /*Картинки в сайдбаре*/
+  /* Описание в сайдбаре */
+  /* Контакты в сайдбаре */
+  /* Контент */ }
   body ol, body ul {
     list-style: none; }
   body * {
@@ -505,5 +509,71 @@ body {
     color: #4f4f4f; }
   body .c-footer {
     padding: 17px 20px 20px 30px; }
+  body .sidebar {
+    width: 300px;
+    margin-bottom: 15px; }
+  body .s-products {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 300px;
+    height: 580px;
+    background: #373737;
+    overflow: hidden; }
+    body .s-products:nth-child(3n) {
+      margin-right: 0; }
+    body .s-products span {
+      display: inline-block;
+      width: 78px;
+      height: 78px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: url(../images/span.png) no-repeat; }
+    body .s-products p {
+      color: #fff; }
+  body .s-product {
+    display: inline-block;
+    margin-bottom: 20px;
+    font: bold 25px arial, sans-serif;
+    color: #fff; }
+    body .s-product:hover {
+      color: #4f4f4f; }
+  body .c-footer {
+    padding: 17px 20px 20px 30px; }
+  body .s-descr-item {
+    margin: 0 10px 0 10px;
+    padding-top: 20px;
+    height: 200px;
+    width: 280px;
+    color: #a7a7a7;
+    border-bottom: 1px solid #d9d9d9; }
+    body .s-descr-item:last-child {
+      border: none; }
+  body h2 a {
+    display: inline-block;
+    margin-bottom: 10px;
+    font: bold 18px/22px arial, sans-serif;
+    color: #474747; }
+    body h2 a:hover {
+      color: #a7a7a7; }
+  body .contacts {
+    margin: 15px 0; }
+  body .c-item {
+    margin-bottom: 7px;
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    border-left: 3px solid #cacaca; }
+    body .c-item:hover {
+      background-color: #dedede; }
+    body .c-item h5 {
+      display: inline-block;
+      margin: 15px 5px 0 20px;
+      font: bold 16px arial, sans-serif;
+      color: #474747; }
+    body .c-item span {
+      font: normal 12px arial, sans-serif;
+      color: #a7a7a7; }
 
 /*# sourceMappingURL=main.css.map */

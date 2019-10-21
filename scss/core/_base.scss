@@ -291,6 +291,113 @@ body {
   }
 
   /*Сайдбар*/
+  .sidebar{
+    width: 300px;
+    margin-bottom: 15px;
+  }
+
+  /*Картинки в сайдбаре*/
+  .s-products {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 300px;
+    height: 580px;
+    background: #373737;
+    overflow: hidden;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    span {
+      display: inline-block;
+      width: 78px;
+      height: 78px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: url(../images/span.png) no-repeat;
+    }
+
+    p {
+      color: #fff;
+    }
+  }
+
+  .s-product {
+    display: inline-block;
+    margin-bottom: 20px;
+    font: bold 25px arial, sans-serif;
+    color: #fff;
+
+    &:hover {
+      color: #4f4f4f;
+    }
+  }
+
+  .c-footer {
+    padding: 17px 20px 20px 30px;
+  }
+
+  /* Описание в сайдбаре */
+  .s-descr-item {
+    margin: 0 10px 0 10px;
+    padding-top: 20px;
+    height: 200px;
+    width: 280px;
+    color: #a7a7a7;
+    border-bottom: 1px solid #d9d9d9;
+
+    &:last-child {
+      border:none;
+    }
+  }
+
+  h2 {
+    a {
+      display: inline-block;
+      margin-bottom: 10px;
+      font: bold 18px/22px arial, sans-serif;
+      color: #474747;
+
+      &:hover {
+        color: #a7a7a7;
+      }
+    }
+  }
+
+  /* Контакты в сайдбаре */
+  .contacts {
+    margin: 15px 0;
+  }
+
+  .c-item {
+    margin-bottom: 7px;
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    border-left: 3px solid #cacaca;
+
+    &:hover {
+      background-color: #dedede;
+    }
+
+    h5 {
+      display: inline-block;
+      margin: 15px 5px 0 20px;
+      font: bold 16px arial, sans-serif;
+      color: #474747;
+    }
+
+    span {
+      font: normal 12px arial, sans-serif;
+      color: #a7a7a7;
+    }
+  }
+
+  /* Контент */
+
 }
 
 
