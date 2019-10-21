@@ -1,3 +1,4 @@
+/* Общие стили */
 body {
   height: 100%;
   font: 12px/24px Arial, Tahoma, sans-serif;
@@ -50,13 +51,18 @@ body {
     margin: 0 auto;
   }
 
+  /* Обвёртка */
   #wrapper {
     min-height: 100%;
     height: auto !important;
     height: 100%;
   }
 
-  /* Панель в шапке */
+  .middle{
+    padding-bottom: 140px;
+  }
+
+  /* Верхняя панель */
   .panel-top {
     height: 67px;
     background-color: #373737;
@@ -72,6 +78,7 @@ body {
     }
   }
 
+  /* Шапка сайта */
   header {
     background-color: #474747;
     height: 70px;
@@ -194,6 +201,7 @@ body {
     margin-bottom: 15px;
   }
 
+  /* Первая фотография */
   .p-img {
     position: relative;
     height:390px;
@@ -548,6 +556,7 @@ body {
     }
   }
 
+  /* Блоки с большим кол-ом текста */
 }
 
 
