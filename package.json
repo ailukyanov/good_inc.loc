@@ -17,6 +17,15 @@
   },
   "homepage": "https://github.com/ailukyanov/good_inc#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "gulp-sourcemaps": "^2.6.5",
+    "normalize.css": "^8.0.1"
   }
 }
