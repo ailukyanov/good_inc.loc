@@ -325,11 +325,15 @@ body {
   /* Основной Контент */
   /* Описание фотографии */
   /* Картинки в колонках */
-  /*Сайдбар*/
-  /*Картинки в сайдбаре*/
+  /* Сайдбар */
+  /* Картинки в сайдбаре */
   /* Описание в сайдбаре */
   /* Контакты в сайдбаре */
-  /* Контент */ }
+  /* Контент */
+  /* Рейтинг звездочки */
+  /* Иконка кассеты вне блока */
+  /* Поля с одними заголовками */
+  /* Кнопка прочитать больше */ }
   body ol, body ul {
     list-style: none; }
   body * {
@@ -428,7 +432,7 @@ body {
     display: block;
     background: #fff;
     border: 1px solid #e7e7e7;
-    font: italic bold 12px/12px arial, sans-serif;
+    font: bold 12px/12px arial, sans-serif;
     color: #1e1e1e;
     width: 230px;
     /*width: 246px;*/
@@ -575,5 +579,96 @@ body {
     body .c-item span {
       font: normal 12px arial, sans-serif;
       color: #a7a7a7; }
+  body .content {
+    margin: 0 320px 15px 0; }
+  body .news-item {
+    position: relative;
+    margin-bottom: 13px;
+    background-color: #fff;
+    padding: 30px 40px 25px;
+    border-left: 4px solid #f26c4f; }
+    body .news-item p {
+      font: normal 14px/22px arial, sans-serif;
+      color: #707070; }
+  body .selected {
+    background: #f26c4f;
+    border-color: #ce4e32; }
+  body .news-item.selected p,
+  body .news-item.selected .news-panel,
+  body .news-item.selected .title-news {
+    color: #fff; }
+  body .title-news {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #474747;
+    font-size: 24px; }
+    body .title-news a {
+      color: inherit; }
+  body .news-panel {
+    margin-bottom: 10px;
+    font: normal 10px tahoma, sans-serif;
+    color: #8f8f8f; }
+    body .news-panel span {
+      display: inline-block;
+      vertical-align: middle; }
+  body .divide {
+    margin: 0 30px;
+    width: 1px;
+    height: 21px;
+    background: #dfdfdf; }
+  body .rate {
+    width: 85px; }
+    body .rate span {
+      height: 14px;
+      background: url(../images/star.png) repeat-x; }
+  body .news-item.selected .rate span {
+    background: url(../images/star-w.png) repeat-x; }
+  body .movie {
+    position: absolute;
+    top: 45%;
+    left: -50px;
+    background: url(../images/movie.png) no-repeat; }
+    body .movie a {
+      display: inline-block;
+      width: 31px;
+      height: 26px; }
+  body .news-item.light {
+    padding: 25px 20px 20px 40px; }
+    body .news-item.light .news-panel {
+      margin-bottom: 0;
+      font: normal 10px tahoma, sans-serif;
+      color: #8f8f8f; }
+  body h4 .title-news {
+    font-size: 24px; }
+  body h5 .title-news {
+    font-size: 18px; }
+  body h3 .title-news {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 34px; }
+  body .r-more {
+    position: relative;
+    width: 90px;
+    height: 45px;
+    margin-bottom: 25px; }
+    body .r-more span {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      bottom: 0;
+      left: 32px;
+      background: url(../images/plus.png) no-repeat center; }
+      body .r-more span a {
+        display: inline-block;
+        width: 20px;
+        height: 20px; }
+    body .r-more a {
+      font: bold 14px/14px arial, sans-serif;
+      color: #bdbdbd;
+      text-transform: uppercase; }
+      body .r-more a:hover {
+        color: #a29f9f; }
 
 /*# sourceMappingURL=main.css.map */
