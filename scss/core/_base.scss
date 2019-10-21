@@ -502,19 +502,19 @@ body {
   }
 
   h4 {
-    .title-news {
+    &.title-news {
       font-size: 24px;
     }
   }
 
   h5 {
-    .title-news {
+    &.title-news {
       font-size: 18px;
     }
   }
 
   h3 {
-    .title-news {
+    &.title-news {
       display: inline-block;
       margin-top: 20px;
       font-size: 30px;
@@ -557,6 +557,103 @@ body {
   }
 
   /* Блоки с большим кол-ом текста */
+  .news-item {
+    &.text {
+      border-left: none;
+      border-bottom: 1px solid #c7c5c5;
+    }
+  }
+
+  .text {
+    position: relative;
+
+    p {
+      display: inline-block;
+      font: bold 14px/24px arial, sans-serif;
+    }
+
+    h3+p {
+      margin-top: 20px;
+    }
+
+    p+p {
+      margin-top: 45px;
+    }
+
+    span {
+      color: #f26c4f;
+    }
+
+    &:last-child {
+      margin-bottom: 125px;
+    }
+
+    &+.text {
+      margin-top: 30px;;
+    }
+
+    &.img-b {
+      padding: 0;
+
+      h3 {
+        padding: 0 40px;
+      }
+
+      p {
+        padding: 0 40px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  .like {
+    padding: 13px 25px;
+    height: 40px;
+    background: #efefef;
+    margin-top: -12px;
+    margin-bottom: 30px;
+    font: normal 12px arial, sans-serif;
+    color: #a2a2a2;
+
+    .n-like {
+      display: inline-block;
+      width: 32px;
+      background: url(../images/like.png) no-repeat right;
+    }
+  }
+
+  /* Подвал */
+  #footer {
+    position: relative;
+    padding: 35px 0;
+    margin-top: -140px;
+    height: 140px;
+    background: #373737;
+
+    p {
+      font: normal 11px/22px arial,sans-serif;
+      color: #7e7e7e;
+    }
+  }
+
+  /* Ссылки в подвале */
+  .f-nav {
+    li {
+      float: left;
+
+      a {
+        display:inline-block;
+        margin-bottom: 15px;
+        padding-right: 20px;
+        font-size: 12px;
+        color: #fff;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }
 
 
