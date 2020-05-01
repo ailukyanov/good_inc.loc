@@ -1,0 +1,128 @@
+.banner {
+  height: 390px;
+
+  @include breakpointmedia($media-768, 'max-width') {
+    height: auto;
+  }
+
+  .wrapper {
+    height: 100%;
+  }
+
+  .column {
+    @include breakpointmedia($media-768, 'max-width') {
+      flex-direction: column;
+      margin: 0;
+
+      & > * {
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+
+    @include breakpointmedia($media-768, 'max-width') {
+      font-size: 0;
+    }
+
+    &:after {
+      position: absolute;
+      top: 0;
+      right: -15px;
+      bottom: 0;
+      background-image: url(../images/arrow.png);
+      background-repeat: no-repeat;
+      background-position: 0 45px;
+      border-left: 10px solid #f26c4f;
+      width: 15px;
+      z-index: 10;
+      content: "";
+
+      @include breakpointmedia($media-768, 'max-width') {
+        display: none;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 0 30px;
+      height: 65px;
+      max-width: 300px;
+      width: 100%;
+      background-color: rgba(0,0,0,.50);
+      color: #ffffff;
+      font-size: 16px;
+
+      @include breakpointmedia($media-768, 'max-width') {
+        max-width: 100%;
+        left: 0;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  &__desc {
+    background-color: #373737;
+    padding: 45px 30px 45px 40px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+
+    @include breakpointmedia($media-480, 'max-width') {
+      padding: 20px;
+    }
+
+    h2 {
+      margin: 0;
+
+      a {
+        display: inline-block;
+        font-size: 19px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff;
+
+        &:hover {
+          color: #a7a7a7;
+        }
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    span, p {
+      margin-top: 10px;
+      color: #a7a7a7;
+    }
+
+    span {
+      background: url(../images/clock-2.png) no-repeat left 2px;
+      padding-left: 25px;
+      line-height: 22px;
+    }
+  }
+}

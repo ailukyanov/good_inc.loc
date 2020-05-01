@@ -1,2 +1,15 @@
+@import "var";
+@import "mixin/mixin";
+
+// core
 @import "core/normalize";
 @import "core/base";
+@import "core/form";
+
+// components
+@import "components/header";
+@import "components/search";
+@import "components/banner";
+@import "components/photos";
+@import "components/content";
+@import "components/footer";

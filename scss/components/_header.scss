@@ -1,0 +1,96 @@
+.header {
+  &__top {
+    background-color: #373737;
+  }
+
+  &__bottom {
+    background-color: #474747;
+  }
+}
+
+.logo {
+  display: inline-flex;
+  vertical-align: top;
+  text-decoration: none;
+  height: 65px;
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    padding-left: 10px;
+  }
+
+  img {
+    height: 100%;
+  }
+}
+
+/* Навигация */
+.nav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @include breakpointmedia($media-480, 'max-width') {
+    flex-direction: column;
+  }
+
+  li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+
+    @include breakpointmedia($media-480, 'max-width') {
+      height: 35px;
+    }
+
+    &:last-child {
+      a {
+        border: none;
+      }
+    }
+
+    a {
+      position: relative;
+      display: inline-block;
+      color: #fff;
+      font-size: 12px;
+      text-decoration: none;
+      border-right: 1px solid #767676;
+      padding: 0 20px;
+
+      @include breakpointmedia($media-480, 'max-width') {
+        display: block;
+        border-right: none;
+        width: 100%;
+        text-align: center;
+      }
+
+      &:after {
+        position: absolute;
+        display: none;
+        bottom: -28px;
+        left: 20px;
+        right: 20px;
+        border-bottom: 4px solid #f26c4f;
+        content:"";
+
+        @include breakpointmedia($media-480, 'max-width') {
+          bottom: -15px;
+        }
+      }
+    }
+
+    &:hover,
+    &.active {
+      a:after {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+/* Социальные сети */
+.search {
+  height: 45px;
+  padding: 15px 0 10px;
+
+  @include breakpointmedia($media-768, 'max-width') {
+    height: auto;
+  }
+
+  &__form {
+    position: relative;
+    display: inline-block;
+    max-width: 300px;
+    width: 100%;
+
+    @include breakpointmedia($media-768, 'max-width') {
+      max-width: inherit;
+    }
+
+    input {
+      width: 100%;
+      height: 45px;
+      line-height: 45px;
+      padding: 0 20px;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    }
+
+    button {
+      position: absolute;
+      top: 0;
+      right: 13px;
+      bottom: 0;
+      margin: auto;
+      background-image: url("../images/clock.png");
+      background-color: transparent;
+      width: 23px;
+      height: 23px;
+
+      &:hover {
+        background-image: url("../images/clock-2.png");
+        background-size: 100%;
+      }
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpointmedia($media-768, 'max-width') {
+      flex-direction: column;
+    }
+  }
+}
+
+.social {
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 15px;
+    padding-left: 20px;
+    font: normal 12px arial, sans-serif;
+    color: #8f8f8f;
+    background-image: url(../images/sprite-social.png);
+    background-repeat: no-repeat;
+
+    &:hover {
+      color: #5a5a5a;
+    }
+
+    & + a {
+      margin-left: 35px;
+
+      @include breakpointmedia($media-480, 'max-width') {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__tw {
+    background-position: 0 0;
+  }
+
+  &__fb {
+    background-position: 0 -16px;
+  }
+
+  &__rss {
+    background-position: 0 -30px;
+  }
+
+  &__mail {
+    background-position: 0 -45px;
+  }
+}
+
+/* Поиск */
+.search {
+  position: relative;
+}
